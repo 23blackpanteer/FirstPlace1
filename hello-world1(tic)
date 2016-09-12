@@ -1,10 +1,15 @@
 using System;
 
 namespace ThinkingIn.CSharp.Chap03{
+
+// nazwa przestrzeni nazw nie ma takiego (dużego) znaczenia, żeby się nią martwić i może być w sumie dowolna , jak ,
+// na przykład, o proszę, ta
+
  public class HelloDate {
   public static void Main() {
    Console.WriteLine("Fuck the fucking fuck fuck the world fucking fuck");
    }
+}
 }
 
 // program w wersji oryginalnej zawierał linijkę
