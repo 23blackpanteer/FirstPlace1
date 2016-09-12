@@ -8,3 +8,6 @@ class Program
         Console.WriteLine("Hello fucking world!");
     }
 }
+
+// program czeka na linijki komentarzy
+// które dopisze później , wyjaśniające dokładniej kod
