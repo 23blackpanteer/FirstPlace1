@@ -1,0 +1,12 @@
+using System;
+
+namespace ThinkingIn.CSharp.Chap03{
+ public class HelloDate {
+  public static void Main() {
+   Console.WriteLine("Fuck the fucking fuck fuck the world fucking fuck");
+   }
+}
+
+// program w wersji oryginalnej zawierał linijkę
+// Console.WriteLine(DateTime.Now);
+// i podawał bieżący czas. przykład z 'thinking in c#'
