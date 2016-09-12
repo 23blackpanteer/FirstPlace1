@@ -16,7 +16,8 @@ namespace ThinkingIn.CSharp.Chap03{
 // Console.WriteLine(DateTime.Now);
 // i podawał bieżący czas. przykład z 'thinking in c#'
 
-
+// ten program działa, dopisałem jeden nawias klamrowy , bo , którego , wcześniej brakowało jak skopiowałem program, ale teraz są, 
+// trzy nawiasy klamrowe, zagłębione.
 
 
 
