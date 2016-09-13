@@ -1,0 +1,66 @@
+using System.IO;
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ah ! the World!");
+        Zwierze zwierze1 = new Zwierze();
+        zwierze1.reakcja();
+        ptak ptak1 = new ptak();
+        ptak1.opis();
+        gad gad1 = new gad();
+        gad1.opis();
+        pies pies1 = new pies();
+        pies1.opis();
+        nietoperz nietoperz1 = new nietoperz();
+        nietoperz1.opis();
+        
+        
+// Console.Readkey();
+    }
+}
+class Zwierze {
+    public void reakcja()
+    {
+    Console.WriteLine("O! zwierze!");
+    }
+}
+class ptak:Zwierze
+{
+    public void opis()
+    {
+    Console.WriteLine("ptak! leci!");
+    }
+}
+class pies:Zwierze
+{
+    public void opis()
+    {
+    Console.WriteLine("pies! biegnie!");
+    }
+}
+class gad:Zwierze
+{
+    public void opis()
+    {
+    Console.WriteLine("gad! czolga sie i pelznie!");
+    }
+}
+class nietoperz:Zwierze
+{
+    public void opis()
+    {
+    Console.WriteLine("gacek! zapierdala w powietrzu!");
+    }
+}
+class istotyZywe
+{
+}
+
+// klasy i dziedziczenie na przykładzie 'typu Zwierzęta' i pochodnych typów konkretniejszych przykładów rodzajów zwierząt
+// do programu można dodać kilka innych funkcji (innych metod)
+
+
+
+
