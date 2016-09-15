@@ -1,0 +1,35 @@
+using System;
+using System.IO;
+
+// podstawowe biblioteki
+
+
+public class Program {
+ 
+// główna klasa
+
+    public static void Main() 
+    {
+    
+    // pytanie ile elementów ma mieć tablica
+    // deklaracja tablicy
+    
+    int x;
+    
+    Console.WriteLine("Ile elementow ma miec tablica?");
+    
+//   Console.Read(x);
+//    
+//   int wielkosctablicy = int.Parse(x);
+//    
+// Ten sposob przyjmowania danych z klawiatury nie dziala..
+
+x = int.Parse(Console.ReadLine());
+
+    Console.WriteLine(x);
+    
+    // wypełnienie tablicy
+        
+    
+        
+    }
