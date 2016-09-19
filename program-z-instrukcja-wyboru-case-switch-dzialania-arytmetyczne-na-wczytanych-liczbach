@@ -1,0 +1,122 @@
+using System;
+
+namespace FirstNumbaNine
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Console.WriteLine ("Hello World!");
+
+			Console.WriteLine ("PRZEDSTAWIAMY KALKULATOR.. fack. kalkulator fack.patrz.");
+			Console.WriteLine ("Podaj typ operacji a potem podaj dwie liczby.. fa..");
+
+
+			Console.WriteLine ("wybierz rzondany rodzaj typ wykonanej operacji..");
+
+
+			Console.WriteLine ("dodawanie");
+			Console.WriteLine ("odejmowanie");
+			Console.WriteLine ("mnozenie");
+			Console.WriteLine ("dzielenie");
+
+			Console.WriteLine ("1 2 3 4 co ktore dzialanie wybierasz.?");
+
+			int a;
+
+			a = Convert.ToInt32(Console.ReadLine());
+
+			// to polecenie jest tozsame takie same jak 
+			// console.readline(a)
+		
+
+			int x, y;
+
+
+			switch (a) {
+			case 1:
+
+				Console.WriteLine ("dodawanie");
+
+		
+	
+
+				Console.WriteLine ("Podaj Dwie liczby !!");
+
+				x = Convert.ToInt32 (Console.ReadLine ());
+				y = Convert.ToInt32 (Console.ReadLine ());
+
+				Console.WriteLine (x + y);
+
+				Console.ReadLine ();
+
+
+				break;
+
+
+
+			case 2:
+
+				Console.WriteLine ("odejmowanie");
+
+
+
+
+				Console.WriteLine ("Podaj Dwie liczby !!");
+
+				x = Convert.ToInt32 (Console.ReadLine ());
+				y = Convert.ToInt32 (Console.ReadLine ());
+
+				Console.WriteLine (x - y);
+
+				Console.ReadLine ();
+
+
+				break;
+
+			case 3:
+
+				Console.WriteLine ("mnozenie");
+
+
+
+				Console.WriteLine ("Podaj Dwie liczby !!");
+
+				x = Convert.ToInt32 (Console.ReadLine ());
+				y = Convert.ToInt32 (Console.ReadLine ());
+
+				Console.WriteLine (x * y);
+
+				Console.ReadLine ();
+
+
+				break;
+
+			case 4:
+
+				Console.WriteLine ("dzielenie");
+
+		
+
+				Console.WriteLine ("Podaj Dwie liczby !!");
+
+				x = Convert.ToInt32 (Console.ReadLine ());
+				y = Convert.ToInt32 (Console.ReadLine ());
+
+				Console.WriteLine (x / y);
+
+				Console.ReadLine ();
+
+
+				break;	
+			}
+
+
+
+
+
+
+
+		}
+	}
+}
