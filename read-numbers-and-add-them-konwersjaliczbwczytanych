@@ -1,0 +1,56 @@
+// druga seria przykładowych programów
+// program wczytuje podane dwie liczby i sumuje
+
+
+using System;
+
+namespace FirstNumbaNine
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Console.WriteLine ("Hello World!");
+			Console.WriteLine ("Podaj po kolei dwie liczby.. :");
+
+			int x, y;
+
+			// x = Console.ReadLine ();
+			// y = Console.ReadLine ();
+
+			x = Convert.ToInt32(Console.ReadLine());
+			y = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine (x + y);
+			Console.ReadLine ();
+
+			// inny sposob
+
+			Console.WriteLine ("Inny sposob konwertowania ze string, bo ten kurwa kompilator , tego nie potrafi, wczytac liczby.. fuck.");
+
+			Console.WriteLine ("metoda parse: ");
+
+			Console.WriteLine("Podaj liczbe");
+
+			string z1 = Console.ReadLine();
+
+			int z2 = int.Parse(z1);
+
+
+			Console.WriteLine ("Podaj druga liczbe. metoda parse");
+
+			string p1 = Console.ReadLine();
+
+			int p2 = int.Parse(p1);
+
+
+			Console.WriteLine (" Z + P ..");
+
+			Console.WriteLine (z2 + p2);
+
+			Console.ReadLine ();
+
+
+		}
+	}
+}
