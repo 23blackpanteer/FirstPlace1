@@ -1,0 +1,187 @@
+using System;
+using System.IO;
+
+
+namespace klasydziedziczenie
+{
+
+
+	class MainClass
+	{
+
+
+		public static void Main (string[] args)
+		{
+
+			// metody klas pochodnych wywołuje się komendą złozoną z dwóch wyrazów :
+			// 'nazwa obiektu (z klasy pochodnej) stworzonego' i po kropce ; nazwa
+			// metody jaką zawiera ta klasa. dwa wyrazy oddzielone kropką.
+
+			// natomiast metodę klasy głównej wywołuje się poprzez podanie 'nazwy klasy 
+			// (tej klasy głównej) i potem (po kropce) nazwy metody , 'zdefiniowanej w
+			// tej klasie głównej i tam nazwanej'
+
+			Console.WriteLine ("Hello World!");
+
+			Console.WriteLine ("Przykład tego polimorfizmu na klasach.");
+
+			// urzadzenia n = new urzadzenia ();
+			// nie trzeba tworzyc nowego egzemplarza klasy głownej 'urzadzenia'
+			// żeby móc wywołać metodę tej klasy
+
+			urzadzenia.dzialanie ();
+
+			mlynek_do_kawy m = new mlynek_do_kawy ();
+
+			piekarnik p = new piekarnik();
+
+			m.dzialanie1 ();
+
+			p.dzialanie1 ();
+
+			komputer_electronic s = new komputer_electronic ();
+
+			s.dzialanie1 ();
+
+			samochod e = new samochod ();
+
+			e.dzialanie1 ();
+
+			lampa te = new lampa ();
+
+			te.dzialanie1 ();
+
+			urzadzenia.dzialanie ();
+
+			s.dzialanie1 ();
+
+			e.dzialanie1 ();
+
+			Console.ReadKey ();
+
+		}
+
+
+
+		// deklaracja klasy urzadzenia (tools mechanic)
+
+		class urzadzenia
+		{
+			public static void dzialanie() 
+
+			{ 
+
+				Console.WriteLine("urzadzenia.dzialanie()");
+
+			}
+
+
+		}
+
+
+
+
+		class mikrofalowka : urzadzenia 
+		{
+
+			public static void dzialanie1() 
+			{
+				Console.WriteLine("mikrofalowka.dzialanie()");
+
+			}
+
+		}
+
+
+
+
+
+		class mlynek_do_kawy : urzadzenia 
+		{
+
+			public void dzialanie1() 
+			{
+
+				Console.WriteLine("mlynek_do_kawy.dzialanie()");
+
+			}
+
+		}
+
+
+		class piekarnik : urzadzenia 
+
+		{
+
+			public void dzialanie1()
+			{
+
+				Console.WriteLine ("piekarnik.dzialanie()");
+
+			}
+
+		}
+
+
+
+
+
+		class komputer_electronic : urzadzenia 
+		{
+			public void dzialanie1()
+			{
+				Console.WriteLine("komputer_electronic.dzialanie()");
+			}
+
+
+
+
+		}
+
+		class samochod : urzadzenia 
+		{
+
+			public void dzialanie1()
+			{
+				Console.WriteLine("samochod.dzialanie()");
+
+			}
+
+		}
+
+		class lampa : urzadzenia 
+		{
+			public void dzialanie1()
+			{
+
+				Console.WriteLine("lampa.dzialanie()");
+
+			}
+
+		}
+
+
+
+
+
+
+	}
+
+
+
+
+
+}
+
+
+
+// potężna ilość błędów wynikała ze złych definicji, definiowania inicjalizowania nowych obiektów
+// klas w sposób , w składni "klasa bazowa , nazwa nowego obiektu, równe Nowy , plus nazwa klasy pochodnej"
+// gdzie prawidłowa definicja jest 'nazwa klasy - nazwa obiektu równe Nowy nazwa klasy'
+
+// kolejnym błędem było wywoływanie głównej metody klasy przez 'nazwa obiektu.nazwa metody klasy głównej'
+// kiedy prawidłowo wywołuje się metodę klasy głównej , następująco 'nazwaklasy głównej.(kropka)nazwa metody klasy głównej'
+
+// metody klas pochodnych wywołuje się 'nazwa nowostworzonego obiektu klasy pochodnej .kropka nazwa metody z klasy pochodnej
+
+
