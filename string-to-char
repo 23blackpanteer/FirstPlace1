@@ -1,0 +1,76 @@
+using System;
+
+namespace charToArray
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Console.WriteLine ("Hello World!");
+
+			string x = "001DE0A89329";
+
+			Console.Write ("to String.. =  ");
+			Console.WriteLine (x);
+
+			Console.Write ("dlugosc Stringa = ");
+			Console.WriteLine (x.Length);
+
+
+			char[] www = new char[x.Length];
+
+			www = x.ToCharArray();
+
+			int i;
+
+			i = x.Length;
+
+			Console.Write ("zmienna i = ");
+
+			Console.WriteLine (i);
+
+			Console.WriteLine("wypisanie znakow z tablicy Char utworzonej ze Stringa");
+
+			foreach (var xz in www)
+			{
+				Console.Write(xz);
+			}
+
+			Console.WriteLine ();
+
+			Console.WriteLine("wypisanie znakow z tablicy Char utworzonej ze Stringa");
+
+			for (int er = 0; er < i; er++) 
+		    {
+
+		    Console.Write (www[er]);
+
+		    }
+
+
+			string napis ="jakistamnapis";
+
+			Console.Write ("dlugosc stringa = ");
+
+			Console.WriteLine (napis.Length);
+
+			char[] tablica = napis.ToCharArray();
+
+
+
+			foreach (var es in tablica)
+			{
+				Console.Write (tablica);
+			}
+
+			Console.ReadKey ();
+
+
+
+
+
+
+
+		}
+	}
+}
