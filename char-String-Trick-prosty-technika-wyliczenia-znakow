@@ -1,0 +1,44 @@
+using System;
+
+namespace charStringTrick
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+		
+			Console.WriteLine ("Hello World!");
+		
+			metoda_x ();
+
+			// w tym przykładzie , w cudzysłowie "ZAGINIONA" metoda X
+			// otóż , wyrazy , ciągi klasy String , można wywoływać tak jak 
+			// znaki z tablicy , za pomocą indeksu w kwadratowym nawiasie, po
+			// podaniu nazwy obiektu String, składnia
+			// tak jak w tutaj poniższej metodzie X , czyli nazwa Stringa-nawias kwadratowy
+			// a w nawiasie numer
+
+			Console.ReadKey ();		
+		
+		}
+	
+	
+		public static void metoda_x()
+		{
+
+			string napis = "napisX";
+
+			for (int i = 0; i < napis.Length; i++) 
+			{
+
+				Console.WriteLine (napis [i]);
+
+			}
+
+
+		}
+	
+	
+	
+	}
+}
