@@ -1,0 +1,146 @@
+using System;
+
+namespace charToArray
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+
+			Console.WriteLine ("Hello World!");
+
+			metoda_1 ();
+
+			Console.ReadKey ();
+
+			metoda_2 ();
+
+			Console.ReadKey ();
+
+			metoda_3 ();
+
+			Console.ReadKey ();
+
+			string_reversal ();
+
+			Console.ReadKey ();
+
+
+		}
+
+	
+	
+		public static void metoda_1()
+		{
+
+			string x = "001DE0A89329";
+
+			Console.WriteLine ("to String.. =  " + x);
+
+			Console.WriteLine ("dlugosc Stringa = " + x.Length);
+
+			char[] www = new char[x.Length];
+
+			www = x.ToCharArray ();
+
+			int i = x.Length;
+
+			Console.WriteLine ("zmienna i = " + i);
+
+			Console.WriteLine ("wypisanie znakow z tablicy Char utworzonej ze Stringa");
+
+			foreach (var xz in www) 
+			{
+			
+				Console.WriteLine (xz);
+			}
+
+
+         }  
+
+
+		public static void metoda_2()
+		{
+
+			Console.WriteLine ("wypisanie znakow z tablicy Char utworzonej ze Stringa za pomoca for");
+
+			string x = "001DE0A89329";
+
+			int i = x.Length;
+
+			char[] www = new char[x.Length];
+
+			www = x.ToCharArray();
+
+			for (int er = 0; er < i; er++) 
+			{
+
+				Console.WriteLine (www [er]);
+
+			}
+
+
+
+		}
+
+
+		public static void metoda_3()
+
+		{
+
+			string napis = "jakistamnapis";
+
+			Console.WriteLine (napis);
+
+			Console.WriteLine ("dlugosc stringa = " + napis.Length);
+
+			char[] tablica = napis.ToCharArray ();
+
+			foreach (var es in tablica) 
+			
+			{
+				Console.WriteLine (es);
+			}
+
+
+		}
+
+
+		public static void string_reversal()
+		{
+			string xyz = "abcdeefg";
+
+			Console.WriteLine (xyz + "\t wypisany string ");
+			Console.WriteLine ("dlugosc tablicy string " + xyz.Length);
+
+
+			char[] tablica_x = new char[xyz.Length];
+
+
+
+			char[] tablica_2 = new char[xyz.Length];
+
+
+			for (int i = 0; i < xyz.Length; i++) 
+			{
+
+				tablica_2 [i] = xyz [i];
+
+				Console.WriteLine (tablica_2 [i]);
+			}
+
+
+		}
+
+
+
+
+
+	}
+
+}
+
+
+// funkcja (stringname).Length
+// funkcja (nazwa tablicy).ToCharArray() wczytuje do danej tablicy Char dany string
+// ma taką składnię Char[] nazwa tablicy = nazwaStringa.ToCharArray()
