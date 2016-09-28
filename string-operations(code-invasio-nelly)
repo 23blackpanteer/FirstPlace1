@@ -1,0 +1,359 @@
+using System;
+
+namespace metodyStringow
+{
+	class MainClass
+	{
+
+
+
+		public static void Main (string[] args)
+		{
+
+			Console.WriteLine ("Hello World!");
+
+			Console.Write ("\r\n");
+
+			string a = "co sie bedzie dzialo";
+
+			string b = ".make address not past";
+
+			metoda1 (a);
+
+			Console.Write ("\r\n");
+
+			metoda1 (b);
+
+			Console.Write ("\r\n");
+
+			metoda1con (a, b);
+
+			Console.Write ("\r\n");
+
+			metoda2on (a);
+
+			Console.Write ("\r\n");
+
+			metoda3stay (a);
+			metoda3stay (b);
+
+			Console.ReadKey ();
+
+			Console.Write ("\r\n");
+
+			metoda4bye (a);
+			metoda4bye (b);
+
+
+			Console.Write ("\r\n");
+
+			metoda5hash (a);
+			metoda5hash (b);
+
+			Console.Write ("\r\n");
+
+			metoda6aye ();
+
+			Console.Write ("\r\n");
+
+			metoda7main (a);
+
+			Console.Write ("\r\n");
+
+			metoda8play (a);
+			metoda8play (b);
+
+			Console.Write ("\r\n");
+
+			metoda9sx (a);
+			metoda9sx (b);
+
+			Console.Write ("\r\n");
+
+			metoda10notr (a);
+
+			Console.Write ("\r\n");
+
+			metoda10notr (b);
+
+			metoda11eigh_t (a);
+			metoda11eigh_t (b);
+
+
+			Console.ReadKey ();
+		
+		}
+
+
+
+
+
+
+
+
+		public static void metoda1(string s)
+		{
+			Console.Write (s);
+			Console.WriteLine ("  (m1)");
+		}
+	
+
+
+
+
+		public static void metoda1con(string s, string t)
+		{
+			
+			// Console.WriteLine (s);
+			// Console.WriteLine (t);
+			Console.Write(String.Concat(s,t));
+			Console.WriteLine ("  (m1con)");
+
+		}
+
+
+
+
+
+		public static void metoda2on(string sa)
+		{
+
+			if (sa.Contains ("co")) 
+			{
+				Console.Write ("ciag literowy zawiera slowo 'co' ");
+			} 
+			else
+				Console.Write ("ciag literowy NIE zawiera slowa co");
+
+
+			Console.WriteLine ("  (m2on)");
+
+
+		}
+
+
+
+
+
+
+		public static void metoda3stay(string sx)
+		{
+
+			Console.Write ("dlugosc ciagu.. ");
+			Console.Write (sx.Length);
+
+
+			Console.WriteLine ("  (m3stay)");
+
+
+
+		}
+
+
+
+
+
+
+		public static void metoda4bye(string sf)
+		{
+
+			string sff;
+			sff = String.Copy (sf); 
+
+			Console.Write ("napis oryginalny i skopiowany :");
+			Console.Write (sf + sff);
+
+			Console.WriteLine ("  (m4bye)");
+
+		}
+
+
+
+
+
+		public static void metoda5hash(string sxx)
+		{
+
+			string sxx1;
+
+			int ei = sxx.Length ;
+
+			int eii = ei / 2;
+
+			sxx1 = sxx.Insert (0, "FUCK . ");
+
+			Console.WriteLine (sxx1);
+
+			string sxx2;
+
+			sxx2 = sxx.Insert (eii, "FUCK !! . ");
+
+			Console.Write (sxx2);
+
+			Console.WriteLine ("  (m5hash)");
+
+
+		}
+	
+
+
+
+
+	
+		public static void metoda6aye()
+		{
+
+			Console.WriteLine ("podaj trzy wyrazy po kolei.. ");
+
+			string x, ax, a1x;
+
+			x = Console.ReadLine();
+
+			ax = Console.ReadLine ();
+
+			a1x = Console.ReadLine ();
+
+			string[] AVv = { x, ax, a1x };
+
+			string SaxV;
+
+			SaxV = String.Join (" .. ", AVv);
+
+			Console.Write (SaxV);
+
+			Console.WriteLine ("  (m6aye)");
+
+
+		}
+	
+
+
+
+	
+		public static void metoda7main(string aSa)
+		{
+			Console.WriteLine (aSa);
+
+			Console.Write(aSa.Replace("co", "KuRwa"));
+
+			Console.WriteLine ("  (m7main)");
+
+		}
+
+
+
+
+
+
+		public static void metoda8play(string axs)
+		{
+
+			Console.Write (axs); 
+			Console.WriteLine (" Usuniecie pierwszych trzech znakow..");
+
+			Console.Write (axs.Remove (0, 3));
+
+
+			Console.WriteLine ("  (m8play)");
+
+		}
+
+
+
+
+
+		public static void metoda9sx (string sa1)
+		{
+			string[] bin = sa1.Split(new char[] {' '});
+
+
+			foreach(string eet in bin)
+			{
+				Console.WriteLine(eet);
+			}
+
+
+		}
+
+
+
+
+		public static void metoda10notr(string esa)
+		{
+
+			Console.WriteLine (esa.Substring (0, 3));
+
+
+		}
+
+
+
+		public static void metoda11eigh_t (string esx)
+		{
+
+
+			Console.WriteLine (esx.ToUpper ());
+
+
+		}
+
+
+
+
+
+
+
+		public static void metoda12olo_n1 ()
+		{
+		}
+
+
+			
+	
+	}
+}
+
+// w tych programach zostało użyte przekazanie 'przez wartość'
+//
+// w definicjach funkcji , zadeklarowane są "zmienne lokalne"
+// a do funkcji jest przekazana (przekazywana) wartość 
+//
+// wartość zmiennej 'w funkcji' jest inicjalizowana za pomocą argumentu
+// (tej funkcji) , przy wywoływaniu (.tej) funkcji
+//
+// do funkcji , do zmiennej lokalnej funkcji jest kopiowana wartość
+// ze zmiennej która wywołała funkcję, czyli to znaczy, że 
+//
+// "argumentem" funkcji wywołanej , była inna zmienna
+// a jako zmienna lokalna w funkcji wykonywanej, jest kopiowana
+// jako wartość tej zmiennej, i na niej są wykonywane operacje
+// (wewnątrz funkcji)
+
+
+
+// Console.Write(String.Concat(s,t));
+// 
+// if (sa.Contains ("co")) 
+// 
+// Console.Write (sx.Length);
+// 
+// sff = String.Copy (sf);
+// 
+// sxx1 = sxx.Insert (0, "FUCK . ");
+// 
+// string[] AVv = { x, ax, a1x }; 
+// string SaxV; 
+// SaxV = String.Join (" .. ", AVv);
+// 
+// Console.Write(aSa.Replace("co", "KuRwa"));
+// 
+// Console.Write (axs.Remove (0, 3));
+// 
+// string[] bin = sa1.Split(new char[] {' '});
+// foreach(string eet in bin) {Console.WriteLine(eet);}
+// 
+// Console.WriteLine (esa.Substring (0, 3));
+// 
+// Console.WriteLine (esx.ToUpper ());
+// 
+// 
